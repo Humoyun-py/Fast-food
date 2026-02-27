@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Feane - Menu{% endblock %}
+{% block title %}Feane - Menyu{% endblock %}
 
 {% block nav_menu %}active{% endblock %}
-{% block nav_menu_active %}<span class="sr-only">(current)</span>{% endblock %}
+{% block nav_menu_active %}<span class="sr-only">(joriy)</span>{% endblock %}
 
 {% block body_class %} sub_page{% endblock %}
 
@@ -12,13 +12,21 @@
 <section class="food_section layout_padding">
   <div class="container">
     <div class="heading_container heading_center">
-      <h2>Our Menu</h2>
+      <h2>Menyu</h2>
     </div>
+
+    <ul class="filters_menu">
+      <li class="active" data-filter="*">Hammasi</li>
+      <li data-filter=".burger">Burger</li>
+      <li data-filter=".pizza">Pitsa</li>
+      <li data-filter=".ichimlik">Ichimliklar</li>
+      <li data-filter=".boshqa">Boshqa</li>
+    </ul>
 
     <div class="filters-content">
       <div class="row grid">
         {% for item in menu_list %}
-        <div class="col-sm-6 col-lg-4 all">
+        <div class="col-sm-6 col-lg-4 all {% if 'burger' in item.name|lower %}burger{% elif 'pizza' in item.name|lower %}pizza{% elif 'cola' in item.name|lower or 'fanta' in item.name|lower or 'pepsi' in item.name|lower or 'juice' in item.name|lower or 'drink' in item.name|lower %}ichimlik{% else %}boshqa{% endif %}">
           <div class="box">
             <div>
               <div class="img-box">
@@ -29,7 +37,7 @@
                 <p>{{ item.description }}</p>
                 <div class="options">
                   <h6>${{ item.price }}</h6>
-                  <a href="#" aria-label="Add {{ item.name }} to cart">
+                  <a href="#" aria-label="{{ item.name }} ni savatga qo'shish">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                       <g>
                         <g>
@@ -54,7 +62,7 @@
         </div>
         {% empty %}
         <div class="col-12">
-          <p class="text-center">Menu hozircha bo'sh.</p>
+          <p class="text-center">Menyu hozircha bo'sh.</p>
         </div>
         {% endfor %}
       </div>

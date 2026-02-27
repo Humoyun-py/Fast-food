@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Feane - Book A Table{% endblock %}
+{% block title %}Feane - Stol band qilish{% endblock %}
 
 {% block nav_book %}active{% endblock %}
-{% block nav_book_active %}<span class="sr-only">(current)</span>{% endblock %}
+{% block nav_book_active %}<span class="sr-only">(joriy)</span>{% endblock %}
 
 {% block body_class %} sub_page{% endblock %}
 
@@ -14,7 +14,7 @@
   <div class="container">
     <div class="heading_container">
       <h2>
-        Book A Table
+        Stol band qilish
       </h2>
     </div>
     <div class="row">
@@ -22,18 +22,18 @@
         <div class="form_container">
           <form action="">
             <div>
-              <input type="text" class="form-control" placeholder="Your Name" />
+              <input type="text" class="form-control" placeholder="Ismingiz" />
             </div>
             <div>
-              <input type="text" class="form-control" placeholder="Phone Number" />
+              <input type="text" class="form-control" placeholder="Telefon raqamingiz" />
             </div>
             <div>
-              <input type="email" class="form-control" placeholder="Your Email" />
+              <input type="email" class="form-control" placeholder="Elektron pochtangiz" />
             </div>
             <div>
               <select class="form-control nice-select wide">
                 <option value="" disabled selected>
-                  How many persons?
+                  Necha kishi?
                 </option>
                 <option value="">
                   2
@@ -54,7 +54,7 @@
             </div>
             <div class="btn_box">
               <button>
-                Book Now
+                Band qilish
               </button>
             </div>
           </form>

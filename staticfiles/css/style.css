@@ -495,11 +495,24 @@ a:focus {
   padding: 7px 25px;
   cursor: pointer;
   border-radius: 25px;
+  border: 1px solid #d4d4d4;
+  background-color: #ffffff;
+  font-weight: 600;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  margin: 5px;
 }
 
 .food_section .filters_menu li.active {
   background-color: #222831;
   color: #ffffff;
+  border-color: #222831;
+}
+
+.food_section .filters_menu li:hover {
+  background-color: #ffbe33;
+  color: #ffffff;
+  border-color: #ffbe33;
 }
 
 .food_section .box {

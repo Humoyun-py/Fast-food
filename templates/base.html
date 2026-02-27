@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="uz">
 
 <head>
   <!-- Basic -->
@@ -56,16 +56,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item {% block nav_home %}{% endblock %}">
-                <a class="nav-link" href="{% url 'home' %}">Home {% block nav_home_active %}<span class="sr-only">(current)</span>{% endblock %}</a>
+                <a class="nav-link" href="{% url 'home' %}">Bosh sahifa {% block nav_home_active %}<span class="sr-only">(joriy)</span>{% endblock %}</a>
               </li>
               <li class="nav-item {% block nav_menu %}{% endblock %}">
-                <a class="nav-link" href="{% url 'menu_list' %}">Menu{% block nav_menu_active %}{% endblock %}</a>
+                <a class="nav-link" href="{% url 'menu_list' %}">Menyu{% block nav_menu_active %}{% endblock %}</a>
               </li>
               <li class="nav-item {% block nav_about %}{% endblock %}">
-                <a class="nav-link" href="{% url 'about' %}">About{% block nav_about_active %}{% endblock %}</a>
+                <a class="nav-link" href="{% url 'about' %}">Biz haqimizda{% block nav_about_active %}{% endblock %}</a>
               </li>
               <li class="nav-item {% block nav_book %}{% endblock %}">
-                <a class="nav-link" href="{% url 'book' %}">Book Table{% block nav_book_active %}{% endblock %}</a>
+                <a class="nav-link" href="{% url 'book' %}">Stol band qilish{% block nav_book_active %}{% endblock %}</a>
               </li>
             </ul>
             <div class="user_option">
@@ -132,7 +132,7 @@
                 </button>
               </form>
               <a href="" class="order_online">
-                Order Online
+                Onlayn buyurtma
               </a>
             </div>
           </div>
@@ -152,19 +152,19 @@
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
             <h4>
-              Contact Us
+              Biz bilan bog'laning
             </h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Manzil
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Qo'ng'iroq: +01 1234567890
                 </span>
               </a>
               <a href="">
@@ -182,7 +182,7 @@
               Feane
             </a>
             <p>
-              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+              Mazali taomlar, tezkor xizmat va qulay muhit - bularning barchasi siz uchun.
             </p>
             <div class="footer_social">
               <a href="">
@@ -205,22 +205,19 @@
         </div>
         <div class="col-md-4 footer-col">
           <h4>
-            Opening Hours
+            Ish vaqti
           </h4>
           <p>
-            Everyday
+            Har kuni
           </p>
           <p>
-            10.00 Am -10.00 Pm
+            10:00 - 22:00
           </p>
         </div>
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a><br><br>
-          &copy; <span id="displayYear"></span> Distributed By
-          <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+          &copy; <span id="displayYear"></span> Barcha huquqlar himoyalangan.
         </p>
       </div>
     </div>
